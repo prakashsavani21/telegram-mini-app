@@ -1,2 +1,10 @@
-Number Challenge Pro v2.0
-Updated: 2026-09-26
+Number Challenge Pro v3.0
+Premium Telegram Mini App
+- Functional all-time / weekly / today leaderboard tabs
+- Daily check-in streak bonus with increasing bonus
+- Reward milestones and unlock states
+- Profile achievements tied to real progress
+- Local progress history
+- Supabase player/game-result sync
+- Telegram Mini App responsive UI
+- Promotional reward points only; no automatic cash redemption

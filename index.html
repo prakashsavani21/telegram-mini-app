@@ -103,7 +103,7 @@
     <!-- LEADERBOARD -->
     <section id="leaderboardScreen" class="screen">
       <div class="page-head"><button class="back-btn" data-back="home">‹</button><div><span class="eyebrow">GLOBAL RANKING</span><h2>Leaderboard</h2></div><span class="trophy">🏆</span></div>
-      <div class="leader-tabs"><button class="active">ALL TIME</button><button>WEEKLY</button></div>
+      <div class="leader-tabs"><button class="active" data-leader-tab="all">ALL TIME</button><button data-leader-tab="week">WEEKLY</button><button data-leader-tab="today">TODAY</button></div>
       <div id="leaderboard" class="leaderboard">
         <div class="loading">Loading rankings…</div>
       </div>
@@ -144,10 +144,13 @@
       </div>
       <div class="section-head"><h3>Reward vault</h3><span class="vault-tag">PROMOTIONAL</span></div>
       <div class="reward-vault">
+        <div class="reward-item featured"><div class="reward-item-icon">💎</div><div><b>1000 Point Milestone</b><small>Reach 1,000 lifetime points</small></div><button class="mini-redeem" data-reward="milestone" disabled>LOCKED</button></div>
         <div class="reward-item featured"><div class="reward-item-icon">🎁</div><div><b>Daily Bonus</b><small>Claim once every day</small></div><strong>+25</strong></div>
         <div class="reward-item"><div class="reward-item-icon">🏆</div><div><b>Weekly Top 3</b><small>Promotional leaderboard rewards</small></div><span class="soon-pill">SOON</span></div>
-        <div class="reward-item"><div class="reward-item-icon">⚡</div><div><b>Speed Master</b><small>Reach 250+ points in one game</small></div><span class="soon-pill">SOON</span></div>
+        <div class="reward-item"><div class="reward-item-icon">⚡</div><div><b>Speed Master</b><small>Reach 250+ points in one game</small></div><button class="mini-redeem" data-reward="speed" disabled>LOCKED</button></div>
       </div>
+      <div class="section-head"><h3>Reward milestones</h3><span class="vault-tag">TRACKED</span></div>
+      <div class="milestone-list"><div><span>🥉</span><div><b>250 points</b><small>First milestone</small></div><strong id="m250">0%</strong></div><div><span>🥈</span><div><b>500 points</b><small>Keep your momentum</small></div><strong id="m500">0%</strong></div><div><span>🥇</span><div><b>1,000 points</b><small>Unlock milestone status</small></div><strong id="m1000">0%</strong></div></div>
       <div class="section-head"><h3>Ways to earn</h3></div>
       <div class="earn-list">
         <div><span>🎮</span><div><b>Complete a challenge</b><small>Earn points from your score</small></div><strong>+</strong></div>
