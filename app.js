@@ -59,7 +59,7 @@ function refreshRewards(){
 }
 
 async function upsertPlayer(){
-  if(!db || user.id==="demo") return;
+  if(!db || String(user.id).startsWith("demo-")) return;
   try{
     await db.from("players").upsert({
       telegram_id:String(user.id), username:user.username||null, display_name:name,
@@ -70,7 +70,7 @@ async function upsertPlayer(){
 }
 async function saveGame(){
   await upsertPlayer();
-  if(!db || user.id==="demo") return;
+  if(!db || String(user.id).startsWith("demo-")) return;
   try{ await db.from("game_results").insert({
     telegram_id:String(user.id), score, correct_answers:correct,
     accuracy:Math.round(correct/TOTAL_ROUNDS*100), played_at:new Date().toISOString()

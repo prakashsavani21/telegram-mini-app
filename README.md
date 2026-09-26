@@ -1,4 +1,4 @@
-# Number Challenge — Pro Telegram Mini App
+# Number Challenge — Pro Telegram Mini App v2.0
 
 A polished Telegram Mini App for a skill-based number challenge.
 
@@ -24,3 +24,13 @@ The included reward points are promotional/virtual points. If you later attach c
 
 ## Deploy
 Upload the folder to GitHub Pages, Vercel, Netlify, or another HTTPS host, then use that HTTPS URL in BotFather's Mini App/Menu Button settings.
+
+
+## v2.0 UI update
+- Premium Reward Vault with daily, weekly and achievement reward cards
+- Promotional reward labels and safer reward messaging
+- Improved Telegram/demo user detection
+- Mobile-first bottom navigation and compact Telegram viewport layout
+
+## GitHub Pages update
+Extract this ZIP first. Upload/replace the files inside the repository; do not upload only the ZIP. After committing, wait for GitHub Pages to publish and refresh the Mini App.
