@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Challenge</title>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="topbar">
+      <div>
+        <div class="small">WELCOME</div>
+        <h1 id="username">Player 👋</h1>
+      </div>
+
+      <div class="score-box">
+        <span>SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- HOME -->
+      <section id="homeScreen" class="screen active">
+
+        <div class="hero-card">
+
+          <div class="game-icon">🔢</div>
+
+          <h2>Number Challenge</h2>
+
+          <p>
+            Find the correct number before the timer runs out.
+          </p>
+
+          <div class="stats">
+
+            <div>
+              <strong>10</strong>
+              <span>Rounds</span>
+            </div>
+
+            <div>
+              <strong>30s</strong>
+              <span>Time</span>
+            </div>
+
+            <div>
+              <strong>🏆</strong>
+              <span>Challenge</span>
+            </div>
+
+          </div>
+
+          <button id="startBtn" class="primary-btn">
+            🚀 START GAME
+          </button>
+
+        </div>
+
+        <div class="menu-grid">
+
+          <button id="leaderboardBtn" class="menu-card">
+            <span>🏆</span>
+            <b>Leaderboard</b>
+          </button>
+
+          <button id="profileBtn" class="menu-card">
+            <span>👤</span>
+            <b>Profile</b>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- GAME -->
+      <section id="gameScreen" class="screen">
+
+        <div class="game-header">
+
+          <div>
+            <span>ROUND</span>
+            <strong id="round">1 / 10</strong>
+          </div>
+
+          <div class="timer">
+            ⏱️ <strong id="timer">30</strong>
+          </div>
+
+        </div>
+
+        <div class="question-card">
+
+          <span class="question-label">
+            FIND THIS NUMBER
+          </span>
+
+          <div id="targetNumber" class="target-number">
+            123
+          </div>
+
+        </div>
+
+        <div id="numberGrid" class="number-grid"></div>
+
+        <div class="progress">
+          <div id="progressBar"></div>
+        </div>
+
+      </section>
+
+
+      <!-- RESULT -->
+      <section id="resultScreen" class="screen">
+
+        <div class="result-card">
+
+          <div class="result-icon">🏆</div>
+
+          <h2>Challenge Complete!</h2>
+
+          <div class="final-score">
+
+            <span>Your Score</span>
+
+            <strong id="finalScore">0</strong>
+
+          </div>
+
+          <div class="result-stats">
+
+            <div>
+              <span>Correct</span>
+              <b id="correctAnswers">0</b>
+            </div>
+
+            <div>
+              <span>Accuracy</span>
+              <b id="accuracy">0%</b>
+            </div>
+
+          </div>
+
+          <button id="playAgainBtn" class="primary-btn">
+            🔄 PLAY AGAIN
+          </button>
+
+          <button id="homeBtn" class="secondary-btn">
+            HOME
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- LEADERBOARD -->
+      <section id="leaderboardScreen" class="screen">
+
+        <div class="page-title">
+          <span>🏆</span>
+          <h2>Leaderboard</h2>
+        </div>
+
+        <div class="leaderboard">
+
+          <div class="player">
+            <span>🥇</span>
+
+            <div>
+              <b>Coming Soon</b>
+              <small>Top Player</small>
+            </div>
+
+            <strong>—</strong>
+          </div>
+
+          <div class="player">
+            <span>🥈</span>
+
+            <div>
+              <b>Coming Soon</b>
+              <small>Player</small>
+            </div>
+
+            <strong>—</strong>
+          </div>
+
+          <div class="player">
+            <span>🥉</span>
+
+            <div>
+              <b>Coming Soon</b>
+              <small>Player</small>
+            </div>
+
+            <strong>—</strong>
+          </div>
+
+        </div>
+
+        <button id="backFromLeaderboard" class="secondary-btn">
+          ← BACK
+        </button>
+
+      </section>
+
+
+      <!-- PROFILE -->
+      <section id="profileScreen" class="screen">
+
+        <div class="profile-card">
+
+          <div id="profileAvatar" class="avatar">
+            👤
+          </div>
+
+          <h2 id="profileName">
+            Player
+          </h2>
+
+          <p id="profileUsername">
+            @player
+          </p>
+
+          <div class="profile-stats">
+
+            <div>
+              <span>Total Score</span>
+              <b id="profileScore">0</b>
+            </div>
+
+            <div>
+              <span>Games</span>
+              <b id="gamesPlayed">0</b>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button id="backFromProfile" class="secondary-btn">
+          ← BACK
+        </button>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <span>Number Challenge</span>
+      <span>v1.0</span>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
